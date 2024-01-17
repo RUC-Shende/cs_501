@@ -1,0 +1,36 @@
+---
+title: "Data Structures and Algorithmic Problem Solving"
+---
+This course is cross-listed in three graduate programs at Rutgers-Camden: Data Science, 
+CCIB and Computer Science. The course is aimed at developing expertise in 
+understanding and implementing many commonly used data structures like arrays, linked lists, 
+tree structures and hash tables. Side by side, the course also serves as an introduction to fundamental techniques and 
+tools for algorithm design and analysis. To implement algorithms and data
+structures, we will use the **Python** programming language along with specific frameworks and
+libraries from the Python ecosystem. 
+
+::: {.callout-important}
+This is a hands-on course! It will be taught in a manner that facilitates in-class coding and 
+analysis assessments. Please be prepared to come to every class with a laptop. 
+Students who are unfamiliar or new to Python coding must be prepared to quickly get up to 
+speed with the language constructs, object-oriented programming and builtin modules 
+by the end of the first three weeks.
+:::
+
+::: {.callout-note title="Software Requirements"}
+Please make sure that you have the following software installed:
+
+- a suitable command-line Unix shell (`gitbash` or `wsl2` on Windows machines; any flavor of Unix on 
+Linux/Mac)
+- Python 3.10+
+- Project Jupyter (for working with IPython/Jupyter notebooks)
+- A suitable code editor (`Pycharm`, `VS Code` etc.) for creating/editing Python modules.
+- The Python package [pythonds3](https://pypi.org/project/pythonds3/): you can install it via `pip`.
+- The Python testing framework [pytest](https://pypi.org/project/pytest/): also use `pip` to install.
+
+Additional Python packages will be recommended for installation as needed.
+:::
+
+## Contents
+
+- [Syllabus](syllabus.qmd)

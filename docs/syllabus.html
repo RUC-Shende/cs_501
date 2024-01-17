@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Structures &amp; Algorithmic Problem Solving: Spring 2024 - Syllabus (Spring 2024)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Data Structures &amp; Algorithmic Problem Solving: Spring 2024</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-information" id="toc-course-information" class="nav-link active" data-scroll-target="#course-information">Course Information</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning Goals</a></li>
+  <li><a href="#reference-material" id="toc-reference-material" class="nav-link" data-scroll-target="#reference-material">Reference Material</a></li>
+  <li><a href="#logistics" id="toc-logistics" class="nav-link" data-scroll-target="#logistics">Logistics</a></li>
+  <li><a href="#tentative-schedule-of-topics" id="toc-tentative-schedule-of-topics" class="nav-link" data-scroll-target="#tentative-schedule-of-topics">Tentative Schedule of Topics</a></li>
+  <li><a href="#course-grade" id="toc-course-grade" class="nav-link" data-scroll-target="#course-grade">Course Grade</a>
+  <ul class="collapse">
+  <li><a href="#letter-grade-rubric" id="toc-letter-grade-rubric" class="nav-link" data-scroll-target="#letter-grade-rubric">Letter grade rubric</a></li>
+  </ul></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Syllabus (Spring 2024)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="course-information" class="level2">
+<h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><strong>Catalog Number</strong></td>
+<td>56:198:501 (also cross-listed as 56:219:501 and 56:121:531)</td>
+</tr>
+<tr class="even">
+<td><strong>Instructor</strong></td>
+<td>Sunil Shende</td>
+</tr>
+<tr class="odd">
+<td><strong>Schedule</strong></td>
+<td><strong>W from 6pm to 8:40pm</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Classroom</strong></td>
+<td><strong>BSB-116</strong> <a href="https://maps.rutgers.edu/#/?lat=39.948855&amp;lng=-75.123362&amp;selected=7073&amp;sidebar=true&amp;underConstructionState=true&amp;zoom=19">Business and Science Building</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Office Hours</strong></td>
+<td>MW on Zoom ** from 3pm to 4pm**</td>
+</tr>
+<tr class="even">
+<td><strong>Email</strong></td>
+<td>shende AT camden DOT rutgers DOT edu</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="learning-goals" class="level2">
+<h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
+<ol type="1">
+<li>Design, implement and understand operational details behind basic data structures such as linked lists, binary search trees, hash tables and skip-lists.</li>
+<li>Implement and analyze searching and sorting with appropriate data structures.</li>
+<li>Understand and analyze three fundamental algorithm design paradigms: <strong>divide-and-conquer</strong>, <strong>greedy</strong> and <strong>dynamic programming</strong>.</li>
+<li>Develop fluency in basic mathematical tools and techniques needed to analyze algorithms, check for their correctness, and establish their complexity using asymptotic notation.</li>
+</ol>
+</section>
+<section id="reference-material" class="level2">
+<h2 class="anchored" data-anchor-id="reference-material">Reference Material</h2>
+<p>We will not have an assigned textbook as such but I will draw upon several excellent sources for material on data structures and algorithms.</p>
+<ol type="1">
+<li><a href="https://www.algorithmsilluminated.org/">Algorithms Unlimited</a></li>
+<li><a href="https://runestone.academy/ns/books/published/pythonds3/index.html?mode=browsing">Problem Solving with Algorithms and Data Structures Using Python (3rd Edition)</a></li>
+<li><a href="https://visualgo.net/en/">VisuAlgo</a></li>
+</ol>
+<p>Links to relevant topics from these sources will be provided on the Rutgers <strong>Canvas</strong> site for the course.</p>
+<p>Additional resources include the following excellent books and websites:</p>
+<ul>
+<li><strong>Algorithms Unplugged</strong>, by Thomas Cormen; The MIT Press (2013).</li>
+<li><strong>Algorithms</strong> by Dasgupta, Papadimitriou and Vazirani; McGraw-Hill Education (2006).</li>
+<li><strong>Introduction to Algorithms (3rd edition)</strong> by Cormen, Leiserson, Rivest and Stein; The MIT Press (2009).</li>
+<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/">MIT's 6.006 Course (Fall 2011)</a> playlist is based on the textbook by Cormen et al.&nbsp;listed above.</li>
+<li><a href="https://opendatastructures.org/">Open data Structures</a></li>
+</ul>
+</section>
+<section id="logistics" class="level2">
+<h2 class="anchored" data-anchor-id="logistics">Logistics</h2>
+<p>This course is now a core course in the Computer Science MS program. It is also cross-listed as an elective in the Data Science MS program, the CCIB Ph.D program and the Applied Computing MBS program. We will be using the Rutgers <strong>Canvas</strong> site for the course as the focal point for sharing all class material.</p>
+<p>Attendance during class sessions is mandatory, especially since the class will run in <strong>semi-flipped</strong> mode with in-class activities and assessments complementing bi-weekly homework assignments.</p>
+<ul>
+<li>Beginning with week 2, the “lecture” material for the week will be made available over the prior weekend in the form of notes, assigned reading and/or videos from the resources, or short videos pre-recorded by me.</li>
+<li>Students are expected to complete the assigned reading/viewing <strong>in advance of the Wednesday class sessions</strong>.</li>
+<li>Each class session will consist of a sequence of activities including student-led discussions on that week’s assigned readings/videos, problem-solving (theory and coding) tied to the specific learning objectives for that week, and two or three in-class assessments (quizzes, written exercises, or programming exercises).</li>
+<li>Bi-weekly homework (approximately 5-6 times during the semester) will be assigned for further practice and applications of class material.</li>
+<li>There will be a proctored, online midterm exam (around Week 7) and an in-class final exam scheduled as per the final examination calendar posted on the Registrar’s site.</li>
+<li>Class discussions will be facilitated through the Canvas site for the course; participation in the discussions is mandatory and will be part of the grade.</li>
+<li>Students <strong>must check-in</strong> during one of the office hour sessions <strong>at least once in two weeks</strong>.</li>
+</ul>
+</section>
+<section id="tentative-schedule-of-topics" class="level2">
+<h2 class="anchored" data-anchor-id="tentative-schedule-of-topics">Tentative Schedule of Topics</h2>
+<p>Please note that this schedule is <strong>tentative</strong> and subject to change. The weeks refer to two consecutive class sessions and not to calendar weeks, e.g.&nbsp;Week 1 below includes Wednesday (Sep 6) and Monday (Sep 11).</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Week</strong></th>
+<th><strong>Topics</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Python warmup; Summations; Arrays; Asymptotic Notation</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Linked lists; Stacks &amp; Queues</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Recursion; Binary Trees; Mergesort</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Divide and Conquer algorithms</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Master Theorem; Quicksort</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Random Quicksort; Hashing</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Heaps</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Spring Break</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Binary Search Trees; Skip Lists</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Graphs: Breadth-First Search</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Graphs: Depth-First Search</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>Dijkstra’s Shortest-Path Algorithm</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>Minimum Spanning Trees</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>Recursion; Dynamic Programming</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>Sequence Alignment</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="course-grade" class="level2">
+<h2 class="anchored" data-anchor-id="course-grade">Course Grade</h2>
+<p>The overall grade will be apportioned as follows:</p>
+<ul>
+<li><strong>15%</strong> for the online midterm exam.</li>
+<li><strong>20%</strong> for bi-weekly homework assignments (after dropping the worst score)</li>
+<li><strong>20%</strong> for the in-class final exam.</li>
+<li><strong>45%</strong> for the in-class assessments.</li>
+</ul>
+<p>Except in the most extenuating circumstances, there will be <strong>no makeup</strong> opportunities for in-class assessments and the final exam. If there are medical reasons for requiring special accommodation, e.g., extra time on the in-class assessments, please obtain the relevant documents from the <a href="https://studentaffairs.camden.rutgers.edu/">Division of Student Affairs</a> and submit them to me.</p>
+<section id="letter-grade-rubric" class="level3">
+<h3 class="anchored" data-anchor-id="letter-grade-rubric">Letter grade rubric</h3>
+<p>The rubric below is <strong>not rigid</strong>: I often use my discretion to curve the grade based on student performance:</p>
+<ul>
+<li>an A grade for overall points above 85%</li>
+<li>a B+ grade in the range 75 – 85%</li>
+<li>a B grade in the range 65 – 75%</li>
+<li>a C+ grade in the range 60 – 65%</li>
+<li>a C grade in the range 50 – 60%</li>
+</ul>
+<p>Anything below 50% is considered unsatisfactory (either a D or F grade).</p>
+</section>
+</section>
+<section id="academic-integrity" class="level2">
+<h2 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h2>
+<p>Student collaboration and online discussions on Canvas are certainly encouraged. However, unless noted otherwise, any required submission that will be graded (quizzes, exams) and any other normative assessment <strong>must be completed individually without any external assistance</strong> (that specifically means not using someone outside class to do your work, or obtaining solutions from the internet, a book or someone else in class). "Copying" from someone else especially without citation or allowing your work to be copied by others constitutes cheating, as does plagiarism from sources including books and the web (this includes <strong>all forms</strong> of AI Large Language Models like ChatGPT or Bard).</p>
+<p>Any violations of academic integrity will be dealt with immediately and severely as per the <a href="https://deanofstudents.camden.rutgers.edu/academic-integrity">Rutgers Academic Integrity Policy and Student Code of Conduct</a>. Please read and understand the policy carefully!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

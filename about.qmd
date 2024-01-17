@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+This is the website for the Spring 2024 edition of
+**Data Structures and Algorithmic Problem Solving** (56:198:501).
+The course is also cross-listed as **Data Science 501** (56:219:501) and
+**CCIB 531** (56:121:531).
