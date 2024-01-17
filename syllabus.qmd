@@ -8,7 +8,7 @@ title: Syllabus (Spring 2024)
 | **Instructor** | Sunil Shende |
 | **Schedule** | **W from 6pm to 8:40pm** |
 | **Classroom** | **BSB-116** [Business and Science Building](https://maps.rutgers.edu/#/?lat=39.948855&lng=-75.123362&selected=7073&sidebar=true&underConstructionState=true&zoom=19) |
-| **Office Hours** | MW on Zoom ** from 3pm to 4pm** |
+| **Office Hours** | MW on Zoom **from 3pm to 4pm** |
 | **Email** | shende AT camden DOT rutgers DOT edu |
 
 
@@ -44,7 +44,7 @@ Additional resources include the following excellent books and websites:
     Rivest and Stein; The MIT Press (2009).
 -   [MIT\'s 6.006 Course (Fall 2011)](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
 playlist is based on the textbook by Cormen et al. listed above.
--   [Open data Structures](https://opendatastructures.org/)
+-   [Open Data Structures](https://opendatastructures.org/)
 
 
 ## Logistics
