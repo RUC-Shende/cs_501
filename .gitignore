@@ -1,7 +1,6 @@
 /.quarto/
 .vdoc.py
 /.DS_Store
-docs/site-libs/
 docs/*.pdf
 
 
