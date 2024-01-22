@@ -29,7 +29,7 @@ We will not have an assigned textbook as such but I will draw upon several
 excellent sources for material on data structures and algorithms. 
 
 1. [Algorithms Unlimited](https://www.algorithmsilluminated.org/)
-2. [Problem Solving with Algorithms and Data Structures Using Python (3rd Edition)](https://runestone.academy/ns/books/published/pythonds3/index.html?mode=browsing)
+2. [Problem Solving with Algorithms and Data Structures Using Python (3rd Edition)](https://runestone.academy/ns/books/published/pythonds3/index.html)
 3. [VisuAlgo](https://visualgo.net/en/)
 
 Links to relevant topics from these sources will be provided on the Rutgers **Canvas** site 
